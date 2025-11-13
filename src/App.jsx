@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Importa i componenti di routing
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext'
 import { LanguageProvider } from './context/LanguageContext'
 import './App.css'
@@ -14,19 +14,19 @@ function App() {
 
   return (
     <>
-    <ThemeProvider>
-      <LanguageProvider>
-        <BrowserRouter>
+      <ThemeProvider>
+        <LanguageProvider>
+          <BrowserRouter basename="/my-portfolio-site">
             <Routes>
-              <Route path="/" element={<Home />} /> {/* Rotta per la Home */}
-              <Route path="/la-mia-storia" element={<LaMiaStoria />} /> {/* Rotta per "La mia storia" */}
-              <Route path="/curriculum" element={<Curriculum />} /> {/* Rotta per "Curriculum" */}
-              <Route path="/linguaggi" element={<Linguaggi />} /> {/* Rotta per "Linguaggi di programmazione" */}
-              <Route path="/skills" element={<Skills />} /> {/* Rotta per "Skills" */}
+              <Route path="/" element={<Home />} />
+              <Route path="/la-mia-storia" element={<LaMiaStoria />} />
+              <Route path="/curriculum" element={<Curriculum />} />
+              <Route path="/linguaggi" element={<Linguaggi />} />
+              <Route path="/skills" element={<Skills />} />
             </Routes>
-         </BrowserRouter>
-      </LanguageProvider>
-    </ThemeProvider>
+          </BrowserRouter>
+        </LanguageProvider>
+      </ThemeProvider>
     </>
   )
 }
