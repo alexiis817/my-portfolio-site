@@ -1,0 +1,51 @@
+.descriptionContainer {
+   padding: 0;
+   height: 100%;
+   width: 100%;
+   background-image: linear-gradient(to left, rgb(197, 210, 227), rgb(103, 130, 129));
+   display: flex;
+   
+   align-items: center;
+   justify-content: space-evenly;
+   
+}
+
+.descriptionContainer.dark {
+   background-image: linear-gradient(to top, rgb(7, 1, 22), rgb(4, 0, 8));
+   color: white;
+}
+
+.descrizione {
+   width: 70%;
+   margin: 2rem;
+   text-align: center;
+ 
+}
+
+.imageContainer {
+   display: flex;
+   gap: 1rem;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+
+.imageContainer img {
+   width: 30rem;
+   height: auto;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   float: left; /* Fa fluttuare l'immagine a sinistra */
+   margin: 0 1rem 1rem 0; /* Aggiungi margine per separare il testo */
+}
+
+.imageContainer img:first-child {
+   height: 35rem;
+   width: auto;
+}
+
+.imageContainer img:hover {
+   box-shadow: 0 8px 20px lightyellow;
+}

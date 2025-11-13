@@ -1,0 +1,124 @@
+.navbarContainer {
+    -webkit-text-stroke: 0.1px black; /* Bordo nero di 1px */
+    transition: transform 0.3s ease;
+    padding: 0;
+    display: flex;
+    position: relative;
+    margin: 0;
+    height: 10vh;
+    text-align: center;
+    width: 100%;
+    gap: 3rem;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to left, lightblue, whitesmoke) ;
+    overflow: visible; /* Permette al dropdown di uscire dal contenitore */
+}
+a {
+    text-decoration: none; /* Rimuove la sottolineatura */
+    color: inherit; /* Usa il colore del testo ereditato (non viola) */
+}
+
+/* Stile per i link visitati */
+a:visited {
+    color: inherit; /* Mantieni il colore del testo anche dopo la visita */
+}
+
+.dropdown.dark{
+    background-image: linear-gradient(black, rgb(54, 50, 50),black);
+}
+.navbarContainer.dark {
+    background-image: linear-gradient(to top, black, rgb(29, 29, 55), rgb(44, 22, 53));
+    color:white;
+}   
+
+   
+.navbarContainer.dark h3 {
+    -webkit-text-stroke: 0.3px black; /* Bordo nero di 1px */
+    color: white;
+}   
+
+
+.rightSide {
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.leftSide {
+    display: flex;
+    position: relative;
+    gap: 3rem;
+}
+#themeButton {
+    font-size: 1rem;
+    border-radius: 50%; /* Forma rotonda */
+    width: 40px;        /* Larghezza fissa */
+    height: 40px;       /* Altezza fissa (deve essere uguale alla larghezza) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;       /* Rimuove il bordo predefinito */
+    cursor: pointer;    /* Cambia il cursore al passaggio del mouse */
+    background-color: #f0f0f0; /* Colore di sfondo */
+    padding: 0;  
+    transition: transform 0.3s ease; /* Aggiunge una transizione fluida */   
+}
+#themeButton:hover{
+    transform: scale(1.2);
+    text-shadow: 1px 1px 16px lightyellow;
+}
+.navInfo {
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-right: 5rem;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    
+}
+.navInfo h2:hover{
+    transform: scale(1.2);
+    
+}
+.navInfo:hover .dropdown{
+    
+    
+    display: flex;
+    position: absolute;
+  
+    
+}
+/* Stile per i titoli "Chi sono" e "Contatti" */
+.navInfo h3 {
+    cursor: pointer; /* Cambia il cursore per indicare che è cliccabile */
+    position: relative;
+    transition: transform 0.3s ease; /* Aggiunge una transizione fluida */ 
+}
+
+/* Stile per i dropdown */
+.dropdown {
+    
+    display: none; /* Nascondi il dropdown di default */
+    position: absolute; /* Posiziona il dropdown rispetto al genitore */
+    top: 100%; /* Posiziona il dropdown sotto il titolo */
+    left: 50%; /* Centra il dropdown rispetto al genitore */
+    transform: translateX(-50%); /* Centra il dropdown rispetto al genitore */
+    background-color: white; /* Colore di sfondo */
+    border: 1px solid #ccc; /* Bordo */
+    padding: 10px; /* Spaziatura interna */
+    z-index: 1000; /* Assicurati che sia sopra altri elementi */
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 5px; /* Bordi arrotondati */
+    box-shadow: 1px 1px 12px lightyellow; /* Ombra */
+    min-width: 150px; /* Larghezza minima per evitare che sia troppo stretto */
+}
+.dropdown h3:hover{
+    color: aquamarine;
+    cursor: pointer;
+    transform: scale(1.15);
+    
+}

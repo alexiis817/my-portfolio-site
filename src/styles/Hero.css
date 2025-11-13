@@ -1,0 +1,40 @@
+
+.heroImage {width: 100%;
+    height: 45rem;
+    display: flex;
+    position: relative;
+    background-image: url('/images/pexels-pixabay-459653.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logos img{
+    margin-left: 5px;
+    height: 2rem;
+}
+.benvenuto{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+}
+.benvenuto h1{
+margin: 1rem 0 1rem 2rem;
+
+
+color: white;
+-webkit-text-stroke: 0.3px black; /* Bordo nero di 1px */
+
+text-shadow: 1px 1px 25px black;}
+
+.heroImage.dark{
+    background-image: url('/images/pexels-junior-teixeira-1064069-2047905.jpg');
+    background-color: black;
+    
+}
+
+.heroImage.dark h1{
+    text-shadow: 1px 1px 25px lightyellow;
+}
