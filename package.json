@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://alexiis817.github.io/myPortfolio",
+  "homepage": "https://alexiis817.github.io/my-portfolio-site",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
